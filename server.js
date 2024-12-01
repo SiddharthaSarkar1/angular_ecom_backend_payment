@@ -77,8 +77,8 @@ app.post("/checkout", async (req, res) => {
         quantity: item.quantity,
       })),
       mode: "payment",
-      success_url: "http://localhost:4242/success.html",
-      cancel_url: "http://localhost:4242/cancel.html",
+      success_url: "https://angular-ecom-backend-payment.vercel.app/success.html",
+      cancel_url: "https://angular-ecom-backend-payment.vercel.app/cancel.html",
     });
     res.status(200).json(session);
   } catch (error) {
